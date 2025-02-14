@@ -15,6 +15,7 @@ RUN addgroup app && adduser -S -G app app
 
 # Set working directory
 WORKDIR /app
+RUN mkdir data
 
 # Copy files first (to leverage Docker cache)
 COPY . .
